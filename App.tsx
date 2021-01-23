@@ -3,6 +3,7 @@ import { StyleSheet, View } from "react-native";
 
 import MainCard from "./components/MainCard";
 import { BalanceValues } from "./types";
+import MainScreen from "./screens/MainScreen";
 
 export default function App() {
   const data: Array<BalanceValues> = [
@@ -11,9 +12,9 @@ export default function App() {
     { title: "Loan", value: 890 },
   ];
   return (
-    <View style={styles.container}>
+    <MainScreen>
       <MainCard balanceValues={data} />
-    </View>
+    </MainScreen>
   );
 }
 
