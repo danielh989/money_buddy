@@ -1,21 +1,10 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet } from "react-native";
 
-import MainCard from "./components/MainCard";
-import { BalanceValues } from "./types";
-import MainScreen from "./screens/MainScreen";
+import UserSummary from "./screens/UserSummary";
 
 export default function App() {
-  const data: Array<BalanceValues> = [
-    { title: "Income", value: 8900 },
-    { title: "Expenses", value: 5500 },
-    { title: "Loan", value: 890 },
-  ];
-  return (
-    <MainScreen>
-      <MainCard balanceValues={data} />
-    </MainScreen>
-  );
+  return <UserSummary></UserSummary>;
 }
 
 const styles = StyleSheet.create({

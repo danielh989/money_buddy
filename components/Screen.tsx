@@ -4,7 +4,7 @@ import Constants from "expo-constants";
 import colors from "../config/colors";
 
 interface Props {}
-const MainScreen: FC<Props> = ({ children }) => {
+const Screen: FC<Props> = ({ children }) => {
   return <SafeAreaView style={styles.container}>{children}</SafeAreaView>;
 };
 const styles = StyleSheet.create({
@@ -15,4 +15,4 @@ const styles = StyleSheet.create({
     padding: 30,
   },
 });
-export default MainScreen;
+export default Screen;
