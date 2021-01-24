@@ -11,7 +11,7 @@ const BellOverview: FC<Props> = (props) => {
         <MaterialCommunityIcons
           color={colors.primary}
           style={styles.bellIcon}
-          size={25}
+          size={22}
           name="bell-ring-outline"
         />
       </View>
@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
   },
   overviewText: {
     fontSize: 22,
+    fontWeight: "bold",
     color: colors.primary,
   },
 });
